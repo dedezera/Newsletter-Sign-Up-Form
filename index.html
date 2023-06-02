@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <title>Newsletter sign-up form with success message | Frontend Mentor</title>
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="shortcut icon" href="assets/images/favicon-32x32.png" type="image/x-icon">
+</head>
+
+<body>
+
+  <main>
+    <section class="container">
+      <div class="features">
+        <h1>Stay updated!</h1>
+        <p>Join 60,000+ product managers receiving monthly updates
+          on:</p>
+        <div class="features-details">
+          <p><img src="assets/images/icon-list.svg" alt="icon">Product discovery and building what matters</p>
+          <p><img src="assets/images/icon-list.svg" alt="icon">Measuring to ensure updates are a success</p>
+          <p><img src="assets/images/icon-list.svg" alt="icon">And much more!</p>
+        </div>
+        <form method="get" id="form">
+          <label for="mail">Email adress</label>
+          <input type="email" name="email" id="mail" placeholder="email@company.com" autocomplete="on">
+          <button id="btn">Subscribe to monthly newsletter</button>
+        </form>
+      </div>
+      <div class="bg-pic">
+        <picture>
+          <source media="(max-width: 670px)" srcset="assets/images/illustration-sign-up-mobile.svg">
+          <img src="assets/images/illustration-sign-up-desktop.svg" alt="illustration sign up">
+      </picture>
+      </div>
+    </section>
+    <section class="subscribed hide">
+      
+        <div class="sub-features">
+          <img src="assets/images/icon-list.svg" alt="icon">
+          <h1>Thanks for subscribing!</h1>
+          <p>
+            A confirmation email has been sent to <strong><span class="userMail"></span></strong>.
+            Please open it and click the button inside to confirm your subscription.
+          </p>
+        </div>
+      <button class="sub-btn">Dismiss message</button>
+    </section>
+  </main>
+
+  <div class="attribution ">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+    Coded by <a href="https://www.linkedin.com/in/andrefelipe23/">André Felipe</a>.
+  </div>
+  <script src="assets/js/index.js"></script>
+</body>
+
+</html>
