@@ -35,7 +35,9 @@ body {
 }
 
 .bg-pic img {
-    height: 510px;
+    height: 550px;
+    max-width: 100%;
+    max-height: 100%;
 }
 
 .features {
@@ -73,11 +75,11 @@ body {
 }
 
 #btn:hover {
-    background-color: var(--CharcoalGrey);
+    background-image: linear-gradient(90deg, #ff5476, #ff683e);
 }
 
 #btn:focus {
-    background-color: var(--Tomato);
+    background-image: linear-gradient(90deg, #ff5476, #ff683e);
 }
 
 #form {
@@ -94,6 +96,15 @@ body {
     border: 1px solid var(--Grey);
     outline: none;
     padding: 15px;
+}
+
+.labels label:nth-last-child(1) {
+    margin-left: 170px;
+    color: var(--Tomato);
+}
+
+#form input:nth-last-child(1):placeholder {
+    color: var(--Tomato);
 }
 
 #form label {
@@ -161,11 +172,11 @@ body {
 }
 
 .subscribed button:focus {
-    background-color: var(--Tomato);
+    background-image: linear-gradient(90deg, #ff5476, #ff683e);
 }
 
 .subscribed button:hover {
-    background-color: var(--CharcoalGrey);
+    background-image: linear-gradient(90deg, #ff5476, #ff683e);
 }
 
 .hide {
